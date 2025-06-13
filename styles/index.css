@@ -3,6 +3,33 @@ body {
     font-weight: normal;
 }
 
+header {
+    position: relative;
+    z-index: 10;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 4px 4px 10px #acacac;
+    
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 1fr 1fr;
+
+    > search {
+        display: flex;
+
+        > img {
+            width: 2%;
+            flex-shrink: 1;
+        }
+        > input {
+            width: 50%;
+            border: none;
+            border-radius: 8px;
+            background-color: #e2e8f0;
+        }
+    }
+}
+
+
 main {
     background-color: #e2e8f0;
     padding: 2rem 1.5rem;
@@ -11,24 +38,22 @@ main {
     gap: 2rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2rem 1fr 2rem 1fr;
-}
 
-main > h1:nth-of-type(1) {
-    grid-column: 1;
-    grid-row: 1;
-    
-}
+    > h1:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
 
-main > h1:nth-of-type(2) {
-    grid-column: 2;
-    grid-row: 1;
-}
+    > h1:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
 
-main > h1:nth-of-type(3) {
-    grid-column: 2;
-    grid-row: 3;
+    > h1:nth-of-type(3) {
+        grid-column: 2;
+        grid-row: 3;
+    }
 }
-
 
 .projects {
     grid-column: 1;
